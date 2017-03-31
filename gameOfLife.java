@@ -12,6 +12,19 @@ public class gameOfLife {
         } else {
             System.out.println("Game Failed!!");
         }
+
+        int[][] inputGameGrid1 = {{1,0,1,1},{0,0,1,1}};
+
+        int num_of_iterations1 = 3;
+
+        int[][] expected_output1 = {{0,0,0,0},{0,0,0,0}};
+
+        result = testGame(inputGameGrid1, num_of_iterations1, expected_output1);
+        if (result) {
+            System.out.println("Game Successful!!");
+        } else {
+            System.out.println("Game Failed!!");
+        }
     }
 
     public static boolean testGame(int[][] seed, int num_of_iterations, int[][] expected_state) {
